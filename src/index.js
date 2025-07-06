@@ -1,10 +1,15 @@
+import dotenv from 'dotenv';
+import connectDB from "./db/index.js";
+
+dotenv.config({
+    path: './env'
+})
+
+connectDB();
 
 
 
-
-
-
-
+// Another method of DB connection
 /*
 import mongoose from "mongoose";
 import {DB_NAME} from './constants'
